@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productdetail.css">
+    <link rel="stylesheet" href="col.css">
+</head>
+<body>
+    <header>
+        <div class="headerleft">
+            <a href="index.html"><img src="image/donut.png" width="50" height="50"></a>
+                <div class="search">
+                    <img src="image/search.png" width="15" height="15"> 
+                    <input class="search_input" placeholder="Search"></input>
+                </div>
+            </div>
+    
+            <div class="headerright">
+            <a href="allproduct.html">ALL PRODUCTS</a>
+            <a href="">HOT!!</a> 
+            <a href="">ABOUT US</a> 
+            <a href="profile.html">MEMBER</a> 
+            <a href="">EVEVNTS</a> 
+            <a href="login.html"><img src="image/user.png" width="25" height="25"></a> <!--登入-->
+
+        <!--購物側邊欄-->
+        <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="25" height="25"></button> 
+        <div id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">X</button>
+            <div class="text-center">
+            <h2>購物車</h2>
+            <img class="sideimg" src="image/suger.jpg">
+            <p>蜜糖魔法圈<br>
+                數量:3<br>
+                Total:$90
+            </p>
+            <div class="bottom-links">
+            <a href="購物車.html">前往結帳</a>
+            </div>
+            </div>
+        <script>
+            function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+            }
+        </script>
+        <!--購物側邊欄-->
+        <div class="clearfix"></div>
+    </header>
+    
+    <div class="image-container">
+        <img class="img1" src="image/FFB5A7.png" alt="Image 1">
+        <img class="img2" src="image/suger1.jpg" alt="Image 2">
+    </div>
+    <nav class="card1">      
+        <div>
+            <h2>蜜糖魔法圈 Suger Magic Ring</h2>          
+            <h5>最經典的蜜糖魔法圈配上糖霜好滋味<br>
+                Q彈口感吃一口就愛上
+            </h5>  
+            <h5>熱量:210kal/售價:$30</h5>         
+        </div>
+        <div class="amount"><!--加減鈕-->
+            <tr>
+                <td class="big_btn_cart">
+                    <div class="btn_cart">
+                        <input type="button" id="down" value="-">
+                        <input type="text" id="num" value="1">
+                        <input type="button" id="up" value="+">
+                    </div>
+                        <div class="btn_buy">
+                            <input type="button" value="加入購物車 " onclick="confirmalert()">
+                        </div>
+                </td>
+            </tr>
+        </div>
+
+    </nav>
+    <div class="evaluate"><h2>商品評價</h2></div>
+    <section>      
+        <div class="card2">
+            <div class="zi_box_1"> 
+                <form action=""> <!--評價區--> 
+                <input type="text" name="name" placeholder="姓名" style="width:15%;height: 30px; margin-left:5%;">
+				<input type="text" name="mail" placeholder="email" style="width:63.2%;height: 30px; margin-right:5%">
+                
+                <textarea rows="5" name="content" placeholder="輸入您的評論" style="width:80%; height: 170px; margin-left:5%;"></textarea>
+				<input type="submit"  value="送出" style="margin-right:0%;"><br>
+                </form>
+            </div>
+        </div>  
+    </section>
+    <div class="comment"><h2>其他評論</h2></div>
+    <section>      
+        <div class="card3">
+            <img class="img3" src="image/picture.jpg" >
+            <h3>匿名</h3>
+            <p>
+                不會太甜 Q度剛剛好 原味是經典一定要吃吃看
+            </p><hr>
+            <img class="img3" src="image/picture.jpg" >
+            <h3>莊秀麗</h3>
+            <p>
+                孫子最愛吃的點心，每次都吵著要買！<br>
+                希望可以做無糖配方~
+            </p><hr>
+            <img class="img3" src="image/picture.jpg" >
+            <h3>Isa</h3>
+            <p>
+                當早餐配牛奶真的好吃 趁優惠買很划算不要錯過 <br> 
+                不過論口味第一名還是草莓最讚
+            </p>
+        </div>  
+    </section>
+</body>
+<script>
+
+    var Add = document.getElementById("up")
+    var Reduce = document.getElementById("down")
+    var num = document.getElementById("num")
+  
+    Add.onclick = function(){
+      num.value = parseInt(num.value)+1;
+    }
+  
+    Reduce.onclick = function(){
+      if(num.value <= 0){
+          num.value = 0;
+      }else{
+          num.value = parseInt(num.value)-1;
+      }
+    }
+  
+    var add = document.getElementById("Up")
+    var reduce = document.getElementById("Down")
+    var Num = document.getElementById("Num")
+  
+    add.onclick = function(){
+      Num.value = parseInt(Num.value)+1;
+    }
+  
+    reduce.onclick = function(){
+      if(Num.value <= 0){
+          Num.value = 0;
+      }else{
+          Num.value = parseInt(Num.value)-1;
+      }
+    }
+  
+  
+      function confirmalert(){
+          var yes = confirm('是否已確認數量正確 ?')
+  
+          if(yes){
+              alert('已加入購物車 ! ')
+          }else{
+              alert('您已按取消，請重新確認。')
+          }
+      }
+      
+  </script>
+</html>

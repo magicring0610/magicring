@@ -1,141 +1,52 @@
-body {
-    background-image: url(../image/back.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    margin: 0px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Inline&family=Lobster+Two&family=Pacifico&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <title>Magic Ring</title>
+    <link rel="stylesheet" href="assest/index.css">
 
-header {
-    background-color: #FEC89A;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    margin: 0 auto;
-    padding-top: 10px;
-    color: #F8EDEB;
-    font-size: 70px;
-    font-family: 'Rubik Puddles', cursive;
-    font-weight: bolder;
-}
+</head>
+<body>
+    <header>
+        <img src="image/donut.png" alt="logo">
+        MAGIC RING
+    </header>
+    <nav>
+        <div class="nav">
+        <a href="allproduct.html">ALL&ensp;PRODUCTS</a>
+        HOT
+        ABOUT&ensp;US
+        <a href="login.html">LOGIN</a>  
+        </div>
+        <div class="item">
+            <img src="image/search.png"> 
+            <img src="image/shopping-cart.png" alt="cart">
+            <a href="profile.html"><img src="image/user.png" alt="profile"></a>
+        </div>
+    </nav>
+    <main>
+        <div class="left">
+            <div class="slogan">
+            圈圈圓圓圈圈<br>
+            甜甜黏黏甜甜
+            </div>
+            <div class="btn">
+            <input type="button"  class="selbtn" value="SELECT!!" onclick="location.href='allproduct.html'">
+            </div>
+        </div>
+        <div class="right">
+            <img src="image/ring.jpg">
+        </div>
 
-header img {
-    height: 100px;
-    float: left;
-    padding-left: 10px;
-    margin: 0 auto;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
+    </main>
+    <footer>
+        歡慶中秋節 買5送2~
+    </footer>
 
-nav {
-    background-color: #FEC89A;
-    font-size: 20px;
-    text-align: center;
-    height: 20px;
-    word-spacing: 25px;
-    padding: 10px;
-    font-family: 'Abril Fatface', cursive;
-    color: #F8EDEB;
-}
-
-nav a {
-    color: #F8EDEB;
-    text-decoration: none;
-}
-
-.item {
-    position: absolute;
-    top: 75px;
-    right: 30px;
-}
-
-
-.nav {
-    float: none;
-}
-
-nav img {
-    height: 35px;
-    margin-left: 10px;
-}
-
-main {
-    height: 100%;
-    margin: 50px;
-}
-
-.left {
-    float: left;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-}
-
-.slogan {
-    font-size: 30px;
-    line-height: 60px;
-    letter-spacing: 5px;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-}
-
-.selbtn {
-    background-color: #FFB5A7;
-    color: #fff;
-    border-radius: 45px;
-    border: 2px #FFB5A7 solid;
-    font-size: 50px;
-    width: 270px;
-    height: 80px;
-    padding: 5px;
-}
-
-.selbtn:hover {
-    color: #FFB5A7;
-    background-color: #fff;
-    border: 2px #FFB5A7 solid;
-}
-
-.right {
-    float: right;
-    text-align: center;
-    height: 100%;
-    width: 50%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right img {
-    width: 400px;
-    border-radius: 50%;
-    margin: 0px auto;
-}
-
-footer {
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    font-size: 20px;
-    margin: 0;
-    background-color: #FCD5CE;
-    position: absolute;
-    bottom: 0px;
-}
+</body>
+</html>

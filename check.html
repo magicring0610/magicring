@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/favicon.ico">
+    <title>結帳</title>
+    <link rel="stylesheet" href="check.css">
+    <link rel="stylesheet" href="col.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="headerleft">
+        <a href=""><img src="image/donut.png" width="50" height="50"></a>
+            <div class="search">
+                <img src="image/search.png"> 
+                <input class="search_input" placeholder="Search"></input>
+            </div>
+        </div>
+
+        <div class="headerright">
+        <a href="">ALL PRODUCTS</a>
+        <a href="">HOT!!</a> 
+        <a href="">ABOUT US</a> 
+        <a href="">MEMBER</a> 
+        <a href="">EVEVNTS</a> 
+        <a href=""><img src="image/user.png"></a> <!--登入-->
+        <a href=""><img src="image/shopping-cart.png"></a> <!--購物車-->
+        </div>
+
+        <div class="clearfix"></div>
+    </header>
+    <!--header-->
+
+    <!--結帳畫面-->
+    <div class="check-center">
+    <div class="menu">
+        <h2>結帳</h2>
+        <div class="table-center">
+        <table>
+            <tr>
+                <td class="first-none"></td>
+                <td class="first-name">商品名稱</td>
+                <td class="first-count">數量</td>
+            </tr>
+            
+            <tr>
+                <td><img src="image/123.jpg"></td>
+                <td class="items">蜜糖魔法圈</td>
+                <td class="items">2</td>
+            </tr>
+
+            <tr>
+                <td><img src="image/456.jpg"></td>
+                <td class="items">豆香魔法圈</td>
+                <td class="items">3</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="total">TOTAL：$ 210</td>
+            </tr>
+
+        <!--付款方式-->
+            <tr>
+                <td><input type="radio" name="payment" value="onlinepay" checked>線上支付</td>
+                <td colspan="2"><input type="radio" name="payment" value="cash">貨到付款</td>
+            </tr>
+        </table>
+        </div>
+        <br><br>
+        <!--結帳按鈕-->
+        <div class="btn-center">
+            <div class="goshopping">
+                <input type="button" name="goshopping" value="繼續購物" onclick="location.href='login.html'">
+            </div>
+            <div class="checkout">
+                <input type="button" name="checkout" value="結&emsp;&emsp;帳" onclick="checkout()">
+            </div>
+        </div>
+    </div>
+    </div> 
+    <!--結帳畫面-->
+
+    <!--購物完成彈跳視窗-->
+    <script>
+        function checkout() {
+            alert("購買完成囉😽\n期待您的下次光臨～")
+            window.location.href="index.html"
+        }
+    </script>
+</body>
+</html>

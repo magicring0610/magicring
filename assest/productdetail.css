@@ -159,6 +159,14 @@ body {
 }
 
 /* 購物側邊欄 */
+/* 移除按鈕的預設樣式 */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 #sidebar {
     position: fixed;
     top: 0;

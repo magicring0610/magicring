@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/favicon.ico">
+    <title>登入</title>
+    <link rel="stylesheet" href="assest/login.css">
+    <link rel="stylesheet" href="assest/col.css">
+</head>
+<body>
+    <header>
+        <div class="headerleft">
+            <a href="index.html"><img src="image/donut.png" width="50" height="50"></a>
+                <div class="search">
+                    <img src="image/search.png" width="16" height="16"> 
+                    <input class="search_input" placeholder="Search"></input>
+                </div>
+            </div>
+    
+            <div class="headerright">
+            <a href="allproduct.html">ALL PRODUCTS</a>
+            <a href="">HOT!!</a> 
+            <a href="">ABOUT US</a> 
+            <a href="profile.html">MEMBER</a> 
+            <a href="">EVEVNTS</a> 
+            <a href="login.html"><img src="image/user.png" width="25" height="25"></a> <!--登入-->
+
+        <!--購物側邊欄-->
+        <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="25" height="25"></button> 
+        <div id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">X</button>
+            <div class="text-center">
+            <h2>購物車</h2>
+            <img class="sideimg" src="image/suger.jpg">
+            <p>蜜糖魔法圈<br>
+                數量:3<br>
+                Total:$90
+            </p>
+            <div class="bottom-links">
+            <a href="購物車.html">前往結帳</a>
+            </div>
+            </div>
+        <script>
+            function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+            }
+        </script>
+        <!--購物側邊欄-->
+        <div class="clearfix"></div>
+    </header>
+
+
+    <div class="array">
+        <main>
+            <h2>會員登入</h2> 
+            <hr size="1.8" color="black">
+            <div class="login">
+                <form method="post" action="">
+                    <div class="login1">
+                        <p>&emsp;帳號</p>  
+                        <input type="text" name="username" placeholder="&emsp;請填寫正確格式"><br>
+                        <p>&emsp;密碼</p> 
+                        <input type="password" name="password" placeholder="&emsp;請輸入密碼"><br>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="登入"> &emsp;&emsp;
+                        <input type="reset" value="重新填寫">
+                    </div>   
+                </form>
+            </div>
+            <hr size="1.8" color="black">    
+            <h5>還沒成為我們的會員!? 
+                <a href=""> ->進入註冊</a></h5>       
+        </main>
+    </div>
+</body>
+</html>

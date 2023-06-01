@@ -1,10 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
-    background-image: url("../image/back.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url("image/back.png");
     background-size: cover;
+    
 }
 
 .array {
@@ -19,13 +21,13 @@ main {
     border-radius: 25px;
     background-color: #F8EDEB;
     font-family: "微軟正黑體";
-    width: fit-content;
+    width: 25%;
     padding: 20px 0;
 }
 
 .login {
     text-align: center;
-    padding: 20px;
+    padding: 20px ;
     font-size: 18px;
 }
 
@@ -51,6 +53,10 @@ p {
     font-size: 16px;
 }
 
+.btn input:hover {
+    background-color: #FEC89A;
+}
+
 h2 {
     text-align: center;
     padding: 0 0 10px 0;
@@ -70,4 +76,6 @@ h5 a {
 h5 a:hover {
     background-color: #F8EDEB;
     color: black;
+    font-size: 15px;
 }
+

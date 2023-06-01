@@ -81,6 +81,10 @@ h5 a:hover {
 
 /* 購物側邊欄 */
 /* 移除按鈕的預設樣式 */
+.text-center p {
+    text-align: center;
+}
+
 button {
     background: none;
     border: none;

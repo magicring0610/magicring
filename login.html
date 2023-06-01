@@ -10,26 +10,25 @@
     <link rel="stylesheet" href="assest/col.css">
 </head>
 <body>
-    <!--header-->
     <header>
         <div class="headerleft">
-        <a href="index.html"><img src="image/donut.png" width="50" height="50"></a>
-            <div class="search">
-                <img src="image/search.png" width="24" height="24"> 
-                <input class="search_input" placeholder="Search"></input>
+            <a href="index.html"><img src="image/donut.png" width="50" height="50"></a>
+                <div class="search">
+                    <img src="image/search.png" width="15" height="15"> 
+                    <input class="search_input" placeholder="Search"></input>
+                </div>
             </div>
-        </div>
+    
+            <div class="headerright">
+            <a href="allproduct.html">ALL PRODUCTS</a>
+            <a href="">HOT!!</a> 
+            <a href="">ABOUT US</a> 
+            <a href="profile.html">MEMBER</a> 
+            <a href="">EVEVNTS</a> 
+            <a href="login.html"><img src="image/user.png" width="25" height="25"></a> <!--登入-->
 
-        <div class="headerright">
-        <a href="allproduct.html">ALL PRODUCTS</a>
-        <a href="">HOT!!</a> 
-        <a href="">ABOUT US</a> 
-        <a href="profile.html">MEMBER</a> 
-        <a href="">EVEVNTS</a> 
-        <a href="login.html"><img src="image/user.png" width="24" height="24"></a> <!--登入-->
-        
         <!--購物側邊欄-->
-        <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="24" height="24"></button> 
+        <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="25" height="25"></button> 
         <div id="sidebar">
         <button class="close-btn" onclick="toggleSidebar()">X</button>
             <div class="text-center">
@@ -43,7 +42,6 @@
             <a href="check.html">前往結帳</a>
             </div>
             </div>
-        </div>
         <script>
             function toggleSidebar() {
             var sidebar = document.getElementById("sidebar");
@@ -51,7 +49,6 @@
             }
         </script>
         <!--購物側邊欄-->
-
         <div class="clearfix"></div>
     </header>
 

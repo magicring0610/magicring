@@ -70,9 +70,11 @@ header {
     display: block;
     animation: bar1 0.4s linear;
 }
+/*我哥哥教我的*/
 
 .headerright {
     float: right;
+    font-size: 16px;
 }
 
 .headerright a {
@@ -88,8 +90,48 @@ header {
     background-color: #F8EDEB;
     color: black;
 }
-/*我哥哥教我的*/
 
 .clearfix {
     clear: both;
 }
+
+/* events 、 廣告 */
+button {
+    font-size: 16px;
+    margin: 0 10px;
+    background: none;
+    border: none;/* 移除按鈕的預設樣式 */
+    padding: 0;
+    cursor: pointer;
+}
+
+.dragon {
+    font-size: 17px;
+    color: #006B37;
+    text-align: center;
+}
+
+dialog{
+    border: none;
+    width: 350px;
+    height: 450px;
+}
+
+dialog::backdrop {
+    width: 850px;
+    height: 570px;
+    background-image: url("../image/dragon.png");
+    background-size: cover;
+    float: left;
+    left: 20%;
+    top: 80px;
+}
+
+dialog button {
+    background-color: #006B37;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+/* events 、 廣告 */

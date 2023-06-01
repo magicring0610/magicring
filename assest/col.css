@@ -13,42 +13,48 @@ header {
     margin: 0px;
     padding: 10px 20px;
     height: 80px;
+    z-index: 9999;
+    /* header不被任何東西遮 */
 }
 
 .headerleft {
     display: flex;
     float: left;
-    align-items: center; 
+    align-items: center;
 }
 
 .search {
     display: flex;
-    align-items: center; 
+    align-items: center;
     height: 40px;
     width: 40px;
     border-radius: 40px;
     background-color: none;
     margin-left: 10px;
 }
+
 .search img {
     margin-left: 8px;
 }
+
 .search:hover {
     animation: bar1 0.2s linear;
     width: 200px;
     background-color: #F8EDEB;
     border-radius: 40px;
-  
+
 }
 
-@keyframes bar1{
+@keyframes bar1 {
     from {
         width: 0px;
     }
+
     to {
         width: 200px;
     }
 }
+
 .search_input {
     display: none;
     border: none;
@@ -57,10 +63,12 @@ header {
     margin-left: 8px;
     height: 25px;
 }
-.search:hover .search_input{
+
+.search:hover .search_input {
     display: block;
     animation: bar1 0.4s linear;
 }
+
 .headerright {
     float: right;
 }
@@ -80,5 +88,5 @@ header {
 }
 
 .clearfix {
-    clear:both;
+    clear: both;
 }

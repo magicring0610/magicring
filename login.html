@@ -17,15 +17,28 @@
                     <img src="image/search.png" width="24" height="24"> 
                     <input class="search_input" placeholder="Search"></input>
                 </div>
-            </div>
+        </div>
     
-            <div class="headerright">
+        <div class="headerright">
             <a href="allproduct.html">ALL PRODUCTS</a>
             <a href="hot.html">HOT!!</a> 
             <a href="">ABOUT US</a> 
-            <a href="profile.html">MEMBER</a> 
-            <a href="">EVEVNTS</a> 
+            <a href="profile.html">MEMBER</a>
+            <!--events / 廣告-->
+            <button id="event">EVENTS</button>
+            <dialog id="eve">
+            <p class="dragon">    
+            慶祝端午節&emsp;買5送2<br>
+            抹茶甜甜圈&emsp;特賣$30<br><br>
+            <a href="allproduct.html">
+            <img style="border-radius: 50%;" src="image/matcha.png" width="246.75" height="181.875">
+            </a>
+            <br><br><br>
+            <button id="close">X</button></p>
+            </dialog>
+            <!--events / 廣告-->
             <a href="login.html"><img src="image/user.png" width="24" height="24"></a> <!--登入-->
+        
 
         <!--購物側邊欄-->
         <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="24" height="24"></button> 
@@ -42,13 +55,26 @@
             <a href="check.html">前往結帳</a>
             </div>
             </div>
+        
         <script>
             function toggleSidebar() {
             var sidebar = document.getElementById("sidebar");
             sidebar.classList.toggle("open");
             }
+        //廣告
+            let btn=document.querySelector("#event");
+            let eve=document.querySelector("#eve");
+            let close=document.querySelector("#close");
+            btn.addEventListener("click", function(){
+            eve.showModal();
+            })
+            close.addEventListener("click", function(){
+            eve.close();
+            })
+        //廣告
         </script>
         <!--購物側邊欄-->
+
         <div class="clearfix"></div>
     </header>
 

@@ -128,3 +128,17 @@ button {
 }
 
 /* 購物側邊欄 */
+
+/* 頂端按鈕 */
+#btn-top {
+    display: none;
+    position: fixed; 
+    bottom: 30px;
+    right: 30px; 
+    border-radius: 50px;
+    background-color: aqua; 
+    cursor: pointer;
+  }
+#btn-top:hover {
+    background-color: #555;
+}

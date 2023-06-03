@@ -52,7 +52,7 @@ header {
     }
 
     to {
-        width: 200px;
+        width: 150px;
     }
 }
 
@@ -64,6 +64,7 @@ header {
     float: right;
     margin-left: 8px;
     height: 25px;
+    width: 120px;
 }
 
 .search:hover .search_input {
@@ -102,29 +103,34 @@ button {
     background: none;
     border: none;/* 移除按鈕的預設樣式 */
     padding: 0;
-    cursor: pointer;
 }
 
 .dragon {
-    font-size: 17px;
+    font-size: 20px;
     color: #006B37;
     text-align: center;
 }
 
 dialog{
     border: none;
-    width: 350px;
-    height: 450px;
+    width: 460px;
+    height: 460px;
 }
 
 dialog::backdrop {
-    width: 850px;
-    height: 570px;
+    width: 1043px;
+    height: 700px;
     background-image: url("../image/dragon.png");
     background-size: cover;
-    float: left;
-    left: 20%;
-    top: 80px;
+    display: block;
+    margin: auto;
+}
+
+#eve img:hover {
+    transform: scale(1.2,1.2);
+}
+#eve a:hover {
+    background-color: white;
 }
 
 dialog button {

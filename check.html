@@ -23,10 +23,22 @@
         <div class="headerright">
             <a href="allproduct.html">ALL PRODUCTS</a>
             <a href="hot.html">HOT!!</a> 
-            <a href="">ABOUT US</a> 
+            <a href="about.html">ABOUT US</a> 
             <a href="profile.html">MEMBER</a> 
-            <a href="">EVEVNTS</a> 
-            <a href="allproduct.html"><img src="image/user.png" width="24" height="24"></a> <!--登入-->
+            <!--events / 廣告-->
+            <button id="event">EVENTS</button>
+            <dialog id="eve">
+            <p class="dragon">    
+            慶祝端午節&emsp;買5送2<br>
+            抹茶甜甜圈&emsp;特賣$30<br><br>
+            <a href="allproduct.html">
+            <img style="border-radius: 50%;" src="image/matcha.png" width="246.75" height="181.875">
+            </a>
+            <br><br>
+            <button id="close">X</button></p>
+            </dialog>
+            <!--events / 廣告-->
+            <a href="login.html"><img src="image/user.png" width="24" height="24"></a> <!--登入-->
 
         <div class="clearfix"></div>
     </header>
@@ -80,13 +92,24 @@
     </div>
     </div> 
     <!--結帳畫面-->
-
-    <!--購物完成彈跳視窗-->
+   
     <script>
+    //購物完成彈跳視窗
         function checkout() {
-            alert("購買完成囉😽\n期待您的下次光臨～")
-            window.location.href="index.html"
-        }
+        alert("購買完成囉😽\n期待您的下次光臨～");
+        window.location.href="index.html";
+    }
+    //廣告
+        let btn=document.querySelector("#event");
+        let eve=document.querySelector("#eve");
+        let close=document.querySelector("#close");
+        btn.addEventListener("click", function(){
+        eve.showModal();
+        })
+        close.addEventListener("click", function(){
+        eve.close();
+        })
+    //廣告
     </script>
 </body>
 </html>

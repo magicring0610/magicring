@@ -26,9 +26,22 @@
         <div class="headerright">
         <a href="allproduct.html">ALL PRODUCTS</a>
         <a href="hot.html">HOT!!</a> 
-        <a href="">ABOUT US</a> 
+        <a href="about.html">ABOUT US</a> 
         <a href="profile.html">MEMBER</a> 
-        <a href="">EVEVNTS</a> 
+        <!--events / 廣告-->
+        <button id="event">EVENTS</button>
+        <dialog id="eve">
+            <p class="dragon">
+                慶祝端午節&emsp;買5送2<br>
+                抹茶甜甜圈&emsp;特賣$30<br><br>
+                <a href="allproduct.html">
+                    <img style="border-radius: 50%;" src="image/matcha.png" width="246.75" height="181.875">
+                </a>
+                <br><br>
+                <button id="close">X</button>
+            </p>
+        </dialog>
+    <!--events / 廣告-->
         <a href="login.html"><img src="image/user.png" width="24" height="24"></a> <!--登入-->
 
         <!--購物側邊欄-->
@@ -51,6 +64,18 @@
             var sidebar = document.getElementById("sidebar");
             sidebar.classList.toggle("open");
             }
+
+        //廣告
+        let btn=document.querySelector("#event");
+            let eve=document.querySelector("#eve");
+            let close=document.querySelector("#close");
+            btn.addEventListener("click", function(){
+            eve.showModal();
+            })
+            close.addEventListener("click", function(){
+            eve.close();
+            })
+        //廣告
         </script>
         <!--購物側邊欄-->
 
@@ -59,7 +84,7 @@
     <main>
         <section>
         <div class="title">
-            熱賣五圈圈
+            熱銷五圈圈
         </div>
         <div class="ponde">
             <div class="product">

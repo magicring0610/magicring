@@ -53,7 +53,6 @@ nav a {
     right: 30px;
 }
 
-
 .nav {
     float: none;
 }
@@ -64,8 +63,8 @@ nav img {
 }
 
 main {
-    height: 100%;
     margin: 50px;
+    font-family: 微軟正黑體;
 }
 
 .left {
@@ -128,7 +127,7 @@ main {
     border-radius: 50%;
     margin: 0px auto;
 }
-
+/*
 footer {
     text-align: center;
     height: 50px;
@@ -139,6 +138,8 @@ footer {
     position: absolute;
     bottom: 0px;
 }
+*/
+
 
 /* 購物側邊欄 */
 /* 移除按鈕的預設樣式 */
@@ -191,6 +192,70 @@ button {
 .bottom-links a {
     display: block;
     margin-bottom: 5px;
+} 
+/* 購物側邊欄 */
+
+/* events 、 廣告 */
+button {
+    background: none;
+    border: none;/* 移除按鈕的預設樣式 */
 }
 
-/* 購物側邊欄 */
+footer button {
+    text-align: center;
+    line-height: 0;
+    height: 60px;
+    width: 100%;
+    font-size: 22px;
+    margin: 0;
+    background-color: #FCD5CE;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.dragon {
+    font-size: 20px;
+    color: #006B37;
+    text-align: center;
+    font-family: 微軟正黑體;
+}
+
+dialog{
+    border: none;
+    width: 460px;
+    height: 460px;
+}
+
+dialog::backdrop {
+    width: 1100px;
+    height: 735px;
+    background-image: url("../image/dragon.png");
+    background-size: cover;
+    display: block;
+    margin: auto;
+}
+
+#eve a {
+    outline: none;
+    cursor:e-resize;
+}
+
+#eve img:hover {
+    transform: scale(1.2,1.2);
+}
+#eve a:hover {
+    background-color: white;
+}
+
+dialog button {
+    background-color: #006B37;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+/* events 、 廣告 */

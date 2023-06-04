@@ -56,7 +56,7 @@ section {
 .ponde {
     columns: 3;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -133,12 +133,7 @@ button {
 #btn-top {
     display: none;
     position: fixed; 
-    bottom: 30px;
-    right: 30px; 
-    border-radius: 50px;
-    background-color: aqua; 
+    bottom: 20px;
+    right: 20px;
     cursor: pointer;
-  }
-#btn-top:hover {
-    background-color: #555;
 }

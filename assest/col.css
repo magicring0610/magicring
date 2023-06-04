@@ -126,6 +126,11 @@ dialog::backdrop {
     margin: auto;
 }
 
+#eve a {
+    outline: none;
+    cursor: e-resize;
+}
+
 #eve img:hover {
     transform: scale(1.2,1.2);
 }

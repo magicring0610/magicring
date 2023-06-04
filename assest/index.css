@@ -140,7 +140,6 @@ footer {
 }
 */
 
-/*下拉選單*/
 ul {
     /* 取消ul預設的內縮及樣式 */
     margin: 0;
@@ -224,7 +223,6 @@ ul.drop-down-menu li:hover>ul {
     /* 滑鼠滑入展開次選單*/
     display: block;
 }
-/*下拉選單*/
 
 /* 購物側邊欄 */
 /* 移除按鈕的預設樣式 */

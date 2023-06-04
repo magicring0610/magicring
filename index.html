@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Inline&family=Lobster+Two&family=Pacifico&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Inline&family=Lobster+Two&family=Pacifico&family=Rubik+Puddles&display=swap"
+        rel="stylesheet">
     <title>Magic Ring</title>
     <link rel="stylesheet" href="assest/index.css">
 
 </head>
+
 <body>
     <header>
         <img src="image/donut.png" alt="logo">
@@ -18,36 +22,67 @@
     </header>
     <nav>
         <div class="nav">
-        <a href="allproduct.html">ALL&ensp;PRODUCTS</a>
-        HOT
-        ABOUT&ensp;US
-        <a href="login.html">LOGIN</a>  
+            <a href="allproduct.html">ALL&ensp;PRODUCTS</a>
+            HOT
+            ABOUT&ensp;US
+            <a href="login.html">LOGIN</a>
         </div>
         <div class="item">
-            <img src="image/search.png"> 
+            <img src="image/search.png">
             <a href="check.html"><img src="image/shopping-cart.png" alt="cart"></a>
             <a href="profile.html"><img src="image/user.png" alt="profile"></a>
-            
+
         </div>
     </nav>
     <main>
         <div class="left">
             <div class="slogan">
-            圈圈圓圓圈圈<br>
-            甜甜黏黏甜甜
+                圈圈圓圓圈圈<br>
+                甜甜黏黏甜甜
             </div>
             <div class="btn">
-            <input type="button"  class="selbtn" value="SELECT!!" onclick="location.href='allproduct.html'">
+                <input type="button" class="selbtn" value="SELECT!!" onclick="location.href='allproduct.html'">
             </div>
         </div>
         <div class="right">
             <img src="image/ring.jpg">
         </div>
-
     </main>
+
     <footer>
-        歡慶中秋節 買5送2~
+        <button id="event">
+            <img src="image/doughnut.png" width="32" height="32">
+            &emsp;&emsp;歡慶中秋節 買 5 送 2 ~&emsp;&emsp;
+            <img src="image/doughnut.png" width="32" height="32">
+        </button>
+
+        <!--events / 廣告-->
+        <dialog id="eve">
+            <p class="dragon">
+                慶祝端午節&emsp;買5送2<br>
+                抹茶甜甜圈&emsp;特賣$30<br><br>
+                    <a href="allproduct.html"><img style="border-radius: 50%;" src="image/matcha.png" width="246.75" height="181.875"></a>
+                <br><br><br><br>
+                <button id="close">X</button>
+            </p>
+        </dialog>
+        <!--events / 廣告-->
     </footer>
 
+    <script>
+        //廣告
+        let btn = document.querySelector("#event");
+        let eve = document.querySelector("#eve");
+        let close = document.querySelector("#close");
+        btn.addEventListener("click", function () {
+            eve.showModal();
+        })
+        close.addEventListener("click", function () {
+            eve.close();
+        })
+        //廣告
+    </script>
+
 </body>
+
 </html>

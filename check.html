@@ -59,23 +59,32 @@
             <tr>
                 <td><img src="image/123.jpg"></td>
                 <td class="items">蜜糖魔法圈</td>
-                <td class="items">2</td>
+                <td class="items">3</td>
             </tr>
-
+            <!--
             <tr>
                 <td><img src="image/456.jpg"></td>
                 <td class="items">豆香魔法圈</td>
                 <td class="items">3</td>
             </tr>
-
+            -->
             <tr>
-                <td colspan="3" class="total">TOTAL：$ 210</td>
+                <td colspan="3" class="total">TOTAL：$ 90</td>
             </tr>
 
         <!--付款方式-->
             <tr>
-                <td><input type="radio" name="payment" value="onlinepay" checked>線上支付</td>
-                <td colspan="2"><input type="radio" name="payment" value="cash">貨到付款</td>
+                <td colspan="3" id="radio-btn">
+                    <label><input type="radio" name="payment" value="onlinepay" checked="checked">
+                        <span class="round button">線上支付</span> 
+                    </label>
+                    <label><input type="radio" name="payment" value="cash">
+                        <span class="round button">貨到付款</span>
+                    </label>
+                    <label><input type="radio" name="payment" value="linepay">
+                        <span class="round button">LINEpay</span> 
+                    </label>
+                </td>
             </tr>
         </table>
         </div>

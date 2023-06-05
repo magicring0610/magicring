@@ -45,6 +45,23 @@ li a:hover {
     border-radius: 40px;
 }
 
+.detail {
+    background-color: #FFB5A7;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px white solid;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bolder;
+
+}
+
+.detail:hover {
+    color: #FFB5A7;
+    background-color: #fff;
+    border: 2px #FFB5A7 solid;
+}
+
 .section-type {
     margin: 30px 0 0 0 ;
 }

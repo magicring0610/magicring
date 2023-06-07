@@ -48,28 +48,62 @@
             <!--events / 廣告-->
             <a href="login.html"><img src="image/user.png" width="24" height="24"></a> <!--登入-->
 
-            <!--購物側邊欄-->
-            <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="24" height="24"></button>
-            <div id="sidebar">
+                    <!--購物側邊欄-->
+        <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="25" height="25"></button> 
+        <div id="sidebar">
+            <div class="text-center">
+            <div class=car>
+                <h2>購物車</h2>
                 <button class="close-btn" onclick="toggleSidebar()">X</button>
-                <div class="text-center">
-                    <h2>購物車</h2>
-                    <img class="sideimg" src="image/suger.jpg">
-                    <p>蜜糖魔法圈<br>
-                        數量:3<br>
-                        Total:$90
-                    </p>
-                    <div class="bottom-links">
-                        <a href="check.html">前往結帳</a>
-                    </div>
-                </div>
-                <script>
-                    function toggleSidebar() {
-                        var sidebar = document.getElementById("sidebar");
-                        sidebar.classList.toggle("open");
-                    }
-                    //廣告
-                    let btn = document.querySelector("#event");
+            </div>
+            <img class="sideimg" src="image/suger.jpg">
+          
+            <p>蜜糖魔法圈<br>
+                數量:3<br>
+                Total:$90
+            </p>
+            <p>刪除此品項</p>
+            <br>
+            <img class="sideimg" src="image/suger.jpg">
+            <p>蜜糖魔法圈<br>
+                數量:3<br>
+                Total:$90
+            </p>
+            <p>刪除此品項</p>
+            <br>
+            <img class="sideimg" src="image/suger.jpg">
+            <p>蜜糖魔法圈<br>
+                數量:3<br>
+                Total:$90
+            </p>
+            <p>刪除此品項</p>
+            <br>
+            <img class="sideimg" src="image/suger.jpg">
+            <p>蜜糖魔法圈<br>
+                數量:3<br>
+                Total:$90
+            </p>
+            <p>刪除此品項</p>
+            <br>
+            <img class="sideimg" src="image/suger.jpg">
+            <p>蜜糖魔法圈<br>
+                數量:3<br>
+                Total:$90
+            </p>
+            <p>刪除此品項</p>
+            
+            <div class="bottom-links">
+                <a href="check.html"><b>前往結帳</b></a>
+            </div>
+            </div>
+        <script>
+            function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+            }
+
+            //廣告
+            let btn = document.querySelector("#event");
                     let eve = document.querySelector("#eve");
                     let close = document.querySelector("#close");
                     btn.addEventListener("click", function () {
@@ -96,8 +130,11 @@
                         document.body.scrollTop = 0; // For Safari
                         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
                     }
-                </script>
-                <!--購物側邊欄-->
+        </script>
+
+        <!--購物側邊欄-->
+                    
+
 
                 <div class="clearfix"></div>
     </header>

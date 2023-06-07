@@ -19,7 +19,7 @@ main {
 }
 
 section {
-    margin: 50px 0 0 0 ;
+    margin: 50px 0 0 0;
 }
 
 .ponde {
@@ -60,6 +60,7 @@ button {
     height: 100%;
     background-color: #F8EDEB;
     transition: left 0.3s ease-in-out;
+    overflow-y: scroll;
 }
 
 #sidebar.open {
@@ -80,12 +81,22 @@ button {
     text-align: center;
 }
 
+.car {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #F8EDEB;
+    z-index: 9999;
+}
+
 .sideimg {
     width: 150px;
 }
 
 .bottom-links {
-    position: absolute;
+
     bottom: 10px;
     width: 100%;
     text-align: center;

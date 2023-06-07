@@ -1,0 +1,225 @@
+* {
+    font-family: "微軟正黑體";
+}
+
+body {
+    background-color: #F9DCC4
+}
+
+.img1 {
+    width: 340px;
+    margin-top: 100px;
+    margin-left: 120px;
+    border-radius: 50%;
+    float: left;
+}
+
+.img2 {
+    width: 320px;
+    margin-top: 110px;
+    margin-left: 130px;
+    border-radius: 50%;
+    float: left;
+}
+
+.image-container {
+    position: relative;
+    /* 将容器设置为相对定位 */
+}
+
+.image-container img {
+    position: absolute;
+    /* 将图像设置为绝对定位 */
+    float: left;
+}
+
+.card1 {
+    border-color: #FFB5A7;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 100px;
+    margin-left: 27%;
+    margin-right: 10%;
+    margin-top: 100px;
+    padding-left: 150px;
+    font-size: 28px;
+}
+
+
+.btn_buy {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+
+}
+
+/* buy按鈕 */
+.btn_buy input {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFB5A7;
+    color: #F8EDEB;
+    border: 1px solid #fff;
+    cursor: pointer;
+
+}
+
+/* buy按鈕 */
+.btn_buy input:hover {
+    background-color: #F8EDEB;
+    color: #FFB5A7;
+    transition: 0.5s;
+
+
+}
+
+.big_btn_cart {
+    display: flex;
+
+    justify-content: center;
+}
+
+.btn_cart {
+    border: 1px solid #fff;
+    background-color: #FFB5A7;
+
+    width: fit-content;
+    display: flex;
+    height: 30px;
+    margin: 10px;
+
+}
+
+#num,
+#up,
+#down,
+#Num,
+#Up,
+#Down {
+    text-align: center;
+    width: 30px;
+    background-color: transparent;
+    color: #F8EDEB;
+    border: none;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    float: right;
+    padding-right: 100px;
+
+}
+
+/* 評價 */
+.evaluate {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+}
+
+.card2 {
+    border-color: #e4c1f9;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 100px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 50px;
+}
+
+/* 評論 */
+.comment {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+}
+
+.card3 {
+    border-color: #FEC89A;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 100px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 3%;
+
+}
+
+/* 虛構評論 */
+.img3 {
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 50%;
+    margin: 18px;
+}
+
+/* 購物側邊欄 */
+/* 移除按鈕的預設樣式 */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #F8EDEB;
+    transition: left 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+#sidebar.open {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.car {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #F8EDEB;
+    z-index: 9999;
+}
+
+.sideimg {
+    width: 150px;
+}
+
+.bottom-links {
+
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-links a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 購物側邊欄 */

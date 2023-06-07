@@ -1,0 +1,159 @@
+body {
+    margin: 0px;
+    background-image: url(../image/back.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    margin: 40px;
+
+}
+
+.left {
+    width: 35%;
+    background-color: #F8EDEB;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #FFB5A7;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.list {
+    font-size: 20px;
+    line-height: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.data {
+    background-color: white;
+    width: 60%;
+    height: 30px;
+    float: right;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+    margin: 10px 0px 0px 10px;
+}
+
+.input {
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+    margin: 10px 0px 0px 10px;
+    border: 0px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.right {
+    width: 60%;
+    float: right;
+    background-color: #F8EDEB;
+    border-radius: 20px;
+    padding: 20px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #FFB5A7;
+}
+
+.record {
+    background-color: white;
+    margin: 10px 30px 30px 30px;
+    height: 170px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.record h2 {
+    font-size: 25px;
+}
+
+.record img {
+    width: 200px;
+    float: left;
+    padding-right: 20px;
+}
+
+/* 購物側邊欄 */
+/* 移除按鈕的預設樣式 */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #F8EDEB;
+    transition: left 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+#sidebar.open {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.car {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #F8EDEB;
+    z-index: 9999;
+}
+
+.sideimg {
+    width: 150px;
+}
+
+.bottom-links {
+
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-links a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 購物側邊欄 */

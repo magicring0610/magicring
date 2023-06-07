@@ -1,0 +1,110 @@
+body {
+    margin: 0 auto;
+    background-color: #F9E5D8;
+    font-family: 微軟正黑體;
+}
+
+main {
+    margin: 20px 40px 40px 40px;
+}
+
+.title {
+    background-color: #F9DCC4;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+section {
+    margin: 50px 0 0 0;
+}
+
+.ponde {
+    columns: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product {
+    background-color: #FCD5CE;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 40px 40px 0 40px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.product img {
+    height: 200px;
+    border-radius: 20px;
+}
+
+/* 購物側邊欄 */
+/* 移除按鈕的預設樣式 */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #F8EDEB;
+    transition: left 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+#sidebar.open {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.car {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #F8EDEB;
+    z-index: 9999;
+}
+
+.sideimg {
+    width: 150px;
+}
+
+.bottom-links {
+
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-links a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 購物側邊欄 */

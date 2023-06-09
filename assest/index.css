@@ -91,7 +91,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
 }
 
 .selbtn {
@@ -100,8 +99,8 @@ main {
     border-radius: 45px;
     border: 2px #FFB5A7 solid;
     font-size: 50px;
-    width: 270px;
-    height: 80px;
+    width: 50%;
+    height: 30%;
     padding: 5px;
 }
 
@@ -151,13 +150,22 @@ main {
 }
 
 /* Position the "next button" to the right */
+.le {
+    flex: 1;
+    float: left;
+}
+
+.ri {
+    flex: 1;
+    float: right;
+}
+
+/* Position the "next button" to the right */
 .next {
-    right: 100px;
     border-radius: 3px 0 0 3px;
 }
 
 .prev {
-    right: 550px;
     border-radius: 3px 0 0 3px;
 }
 

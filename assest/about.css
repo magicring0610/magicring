@@ -1,0 +1,467 @@
+* {
+    font-family: "微軟正黑體";
+}
+
+body {
+    background-color: #F9DCC4
+}
+
+/* 滾動條*/
+/* 滾動條的寬度 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 滾動條和視窗上下間距的樣式 */
+::-webkit-scrollbar-button {
+    /* background: transparent; */
+    background: #F9DCC4(40, 39, 39);
+    height: 20px;
+    display: none;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #F9DCC4(40, 39, 39);
+
+}
+
+/* 滑塊的樣式 */
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(83, 83, 83);
+    /* border: 1px solid slategrey; */
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: transparent;
+}
+
+/* 滾動條結束*/
+/* 導覽列 */
+/* * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+} */
+body {
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+}
+
+.search {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.search input#search {
+    width: 10px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #F9DCC4;
+    padding-left: 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+
+.search input#search::-webkit-input-placeholder {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search.icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 0px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.search input#search:focus,
+.search input#search:active {
+    outline: none;
+    width: 150px;
+}
+
+.search:hover input#search {
+    width: 150px;
+}
+
+.search:hover .icon {
+    color: #93a2ad;
+}
+
+
+#nav {
+    /* border: 2px solid palevioletred; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+    z-index: 1000;
+    /* 調整透明度 */
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    position: fixed;
+    color: white;
+    /* 調整透明度 */
+    /* opacity: 0.9; */
+    /* transition: top 0.5s ease; */
+    /* transition: 0.4s;
+    opacity: 0; */
+
+}
+
+
+
+
+/* 旁邊的logo */
+.logo {
+    /* border: 2px solid greenyellow; */
+    height: 100%;
+    width: 25%;
+    /* padding: 10px; */
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5px;
+    line-height: 5px;
+
+
+
+}
+
+.wrap-logo {
+    display: flex;
+    /* border: 2px solid royalblue; */
+    position: relative;
+    align-items: center;
+    margin: 2%;
+    height: 90px;
+}
+
+.wrap-logo>a img {
+    position: relative;
+}
+
+.logo-title {
+    /* border: 2px solid rebeccapurple; */
+    position: relative;
+    margin-left: 2px;
+    line-height: 25px;
+}
+
+.logo a>img {
+    display: block;
+    margin: auto;
+    padding: 2px;
+    height: 60px;
+    width: 60px;
+    /* border: 2px solid black; */
+}
+
+.homepage-logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 旁邊的logo結束 */
+
+/* 下拉式選單 */
+.nav-title {
+
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin-top: 1%; */
+    height: 100%;
+    width: 50%;
+    float: left;
+    /* border: 2px solid darkcyan; */
+    text-align: center;
+}
+
+.name {
+    position: relative;
+    /* left: 20%; */
+}
+
+.nav-name>li {
+    float: left;
+}
+
+.nav-title li {
+    list-style: none;
+    position: relative;
+
+}
+
+.name {
+    width: 20%;
+}
+
+.nav-title ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+/* name漂浮改變顏色 */
+.nav-name>li>a:hover {
+    color: #C0A06A;
+}
+
+.subname li a {
+    background-color: #F9DCC4(0, 0, 0, 0.6);
+    /* subname的標題 */
+    border: 0.1px solid gray;
+    line-height: 70px;
+}
+
+.subname li a:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+.nav-name a {
+    text-decoration: none;
+    color: inherit;
+    /* background-color: blue; */
+    /* width: 300px; */
+    /* border: 2px solid rgb(123, 47, 47); */
+    display: block;
+    line-height: 100px;
+
+}
+
+.nav-name ul {
+    display: none;
+    /* subname總框架 */
+
+
+
+}
+
+.nav-name .name:hover ul {
+    display: block;
+
+}
+
+/* 下拉式選單結束 */
+/* 導覽列右側 */
+.right-icon {
+    /* container包住items，items有彈性 */
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+    /* border: 2px solid chocolate; */
+    width: 20%;
+    margin-left: 4%;
+}
+
+.right-icon img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    /* border: 2px solid chartreuse; */
+}
+
+/* 導覽列結束 */
+.classa {
+    /* border: solid palevioletred 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9DCC4(25, 25, 25);
+    height: 100vh;
+}
+
+.cardcontainer {
+    display: flex;
+    /* margin-top: 7%; */
+}
+
+
+.card {
+    /* 相对定位 */
+    position: relative;
+    /* width: 300px;
+    height: 450px; */
+    width: 340px;
+    height: 525px;
+    margin: 20px;
+    background-color: #e4c1f9(79, 79, 79, 0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+
+.card .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card .photo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.card:hover .photo {
+    top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #e4c1f9(0, 0, 0, 0.8);
+}
+
+
+.card .photo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, #222);
+}
+
+.card h1 {
+    position: absolute;
+    top: 370px;
+    transition: 0.5s;
+    /* font-size: 20px; */
+    /* font-weight: normal; */
+}
+
+.card:hover h1 {
+    top: 170px;
+}
+
+.card h2 {
+    margin-top: 220px;
+    width: 80%;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+    font-size: 25px;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    padding-bottom: 10px;
+}
+
+.card p {
+    /* border: 2px solid palevioletred; */
+    width: 80%;
+    /*text-indent: 32px; */
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    /*line-height: 30px; */
+}
+
+.card a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border: 1px solid #fff(255, 255, 255, 0.5);
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+
+.card a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* 購物側邊欄 */
+/* 移除按鈕的預設樣式 */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #F8EDEB;
+    transition: left 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+#sidebar.open {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.car {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #F8EDEB;
+    z-index: 9999;
+}
+
+.sideimg {
+    width: 150px;
+}
+
+.bottom-links {
+
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-links a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 購物側邊欄 */

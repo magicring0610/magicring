@@ -88,7 +88,9 @@ section {
 
 .product img {
     height: 200px;
+    width: 250px;
     border-radius: 20px;
+}
 }
 
 /* 購物側邊欄 */

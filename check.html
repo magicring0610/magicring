@@ -54,38 +54,76 @@
                 <td class="first-none"></td>
                 <td class="first-name">商品名稱</td>
                 <td class="first-count">數量</td>
+                <td class="first-total">小計</td>
+                <td class="first-delete"></td>
             </tr>
             
             <tr>
                 <td><img src="image/123.jpg"></td>
                 <td class="items">蜜糖魔法圈</td>
-                <td class="items">3</td>
+                <td class="items">
+                    <div>
+                        <input type="button" id="down" value="-" class="minus">
+                        <input type="text" id="num" value="1" name="num" class="num">
+                        <input type="button" id="up" value="+" class="add">
+                    </div>
+                </td>
+                <td class="items">100</td>
+                <td class="del"><input type="button" name="del" value="刪除"></td>
             </tr>
-            <!--
+
             <tr>
-                <td><img src="image/456.jpg"></td>
-                <td class="items">豆香魔法圈</td>
-                <td class="items">3</td>
+                <td><img src="image/123.jpg"></td>
+                <td class="items">蜜糖魔法圈</td>
+                <td class="items">
+                    <div>
+                        <input type="button" id="down" value="-" class="minus">
+                        <input type="text" id="num" value="1" name="num" class="num">
+                        <input type="button" id="up" value="+" class="add">
+                    </div>
+                </td>
+                <td class="items">100</td>
+                <td class="del"><input type="button" name="del" value="刪除"></td>
             </tr>
-            -->
-            <tr>
-                <td colspan="3" class="total">TOTAL：$ 90</td>
-            </tr>
+
 
         <!--付款方式-->
             <tr>
-                <td colspan="3" id="radio-btn">
+                <td colspan="3" id="radio-btn1" class="rbtn-height" style="border-top: 1px black solid;">
+                    <font style="font-size: 17px;">取貨方式&emsp;</font>
+                    <label><input type="radio" name="shipway" value="onlinepay" >
+                        <span class="round button">宅配</span> 
+                    </label>
+                    <label><input type="radio" name="shipway" value="cash">
+                        <span class="round button">超商自取</span>
+                    </label>
+                </td>
+                <td colspan="2" class="total" style="border-top: 1px black solid;">運費：$ 210</td>
+            </tr>
+           
+            <tr>
+                <td colspan="2" class="rbtn-height">
+                    <font  style="font-size: 17px;">優惠券&emsp;&emsp;</font>
+                    <input type="text" class="voucher" placeholder="請輸入折價代碼"></input>
+                </td>
+                <td></td>
+                <td colspan="2" class="total" style="font-size: 22px; font-style: italic;">TOTAL：$ 210</td>
+            </tr>
+            <tr>
+                <td colspan="5" id="radio-btn" class="rbtn-height">
+                    <font style="font-size: 17px">付費方式&emsp;&emsp;</font>
                     <label><input type="radio" name="payment" value="onlinepay" checked="checked">
                         <span class="round button">線上支付</span> 
                     </label>
                     <label><input type="radio" name="payment" value="cash">
                         <span class="round button">貨到付款</span>
                     </label>
-                    <label><input type="radio" name="payment" value="linepay">
-                        <span class="round button">LINEpay</span> 
+                    <label><input type="radio" name="payment" value="ATM">
+                        <span class="round button">ATM轉帳</span> 
                     </label>
                 </td>
             </tr>
+            
         </table>
         </div>
         <br><br>
@@ -120,5 +158,47 @@
         })
     //廣告
     </script>
+    <script>
+        var add1 = document.getElementsByClassName("add");
+        for (var i = 0; i < add1.length; i++) {
+            add1[i].index = i;
+            add1[i].onclick = function () {
+                var quota = this.index;
+                var quantity = document.getElementsByClassName("num")[quota];
+                var newvalue = parseInt(quantity.value) + 1;
+                quantity.setAttribute("value", newvalue);
+                changeSum(quota, newvalue);
+            }
+        }
+        var minus1 = document.getElementsByClassName("minus");
+        for (var j = 0; j < minus1.length; j++) {
+            minus1[j].index = j;
+            minus1[j].onclick = function () {
+                var quota = this.index;
+                var quantity = document.getElementsByClassName("num")[quota];
+                if (parseInt(quantity.value) == 1) {
+                    quantity.setAttribute("value", quantity.value);
+                }
+                 else {
+                    var newvalue = parseInt(quantity.value) - 1;
+                    quantity.setAttribute("value", newvalue);
+                }
+            }
+        }
+        // Enable hiddle nav bar
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-130px";
+            }
+        prevScrollpos = currentScrollPos;
+        }
+        // if(window.scrollTo(0,0)){
+        //   document.getElementById("nav").style.opacity = "0";
+        // })
+    </script>   
 </body>
 </html>

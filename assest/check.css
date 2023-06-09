@@ -14,17 +14,18 @@ h2 {
 
 .check-center {
     width: 100%;
-    height: 900px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px 0;
 }
 
 .menu {
     background-color: #F8EDEB;
     text-align: center;
-    width: 48%;
-    height: 790px;
+    width: 55.5%;
+    height: fit-content;
     border-radius: 30px;
 }
 
@@ -35,7 +36,7 @@ h2 {
 
 table {
     background-color: white;
-    width: 80%;
+    width: 83%;
     height: 550px;
     text-align: center;
     border-collapse: collapse;
@@ -43,19 +44,31 @@ table {
 
 .first-none {
     border-bottom: 1px black solid;
-    width: 45%;
+    width: 35%;
 }
 
 .first-name {
     border-bottom: 1px black solid;
     height: 55px;
-    width: 35%;
+    width: 25%;
 }
 
 .first-count {
     border-bottom: 1px black solid;
     height: 55px;
-    width: 19.5%;
+    width: 17.5%;
+}
+
+.first-total {
+    border-bottom: 1px black solid;
+    height: 55px;
+    width: 17.5%;
+}
+
+.first-delete {
+    border-bottom: 1px black solid;
+    height: 55px;
+    width: 4.5%;
 }
 
 td img {
@@ -68,19 +81,62 @@ td img {
     font-size: 18px;
 }
 
+.del  input{
+    margin: 20px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 13px;
+}
+
+.del  input:hover{
+    background-color: #eee;
+    cursor: wait;
+}
+
 .total {
-    border-top: 1px black solid;
+    
     font-weight: bold;
     font-size: 22px;
     height: 70px;
+    font-size: 20px; 
+    font-weight: bold; 
+    text-align: right;
+    padding-right: 40px;
 }
 
+.voucher {
+    background-color: #F8EDEB;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    width: 170px;
+    text-align: center;
+}
+
+
 /*radio設定*/
+.rbtn-height {
+    height: 80px;
+}
+
+
 #radio-btn input[type="radio"] {
-    display: none; 
+    display: none;
+}
+
+#radio-btn1 input[type="radio"] {
+    display: none;
 }
 
 #radio-btn input:checked + .button {
+    background-color:#FEC89A;
+    color: black;
+    cursor: grabbing;
+}
+#radio-btn1 input:checked + .button {
     background-color:#FEC89A;
     color: black;
     cursor: grabbing;
@@ -90,7 +146,13 @@ td img {
     background-color: #F9DCC4;
     color: black;
     font-size: 16px;
-    padding: 10px 50px;
+    padding: 10px 40px;
+}
+#radio-btn1 .button {
+    background-color: #F9DCC4;
+    color: black;
+    font-size: 16px;
+    padding: 10px 40px;
 }
 
 #radio-btn .button:hover {
@@ -99,15 +161,25 @@ td img {
     color: black;
     cursor: grab;
 }
+#radio-btn1 .button:hover {
+    border: dashed 2px #F9DCC4;
+    background-color: white;
+    color: black;
+    cursor: grab;
+}
 
 #radio-btn .round {
-    border-radius: 40px;
+    border-radius: 30px;
+}
+#radio-btn1 .round {
+    border-radius: 30px;
 }
 /*radio設定*/
 
 .btn-center {
     display: flex;
     justify-content: space-around;
+    height: 100px;
 }
 
 .goshopping input {
@@ -143,3 +215,16 @@ td img {
     height: 48px;
     font-size: 22px;
 } 
+
+#num,
+#up,
+#down,
+#Num,
+#Up,
+#Down {
+  text-align: center;
+  width: 20px;
+  background-color: transparent;
+  color: #000000;
+  border: none;
+}

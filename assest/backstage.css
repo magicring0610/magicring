@@ -1,0 +1,12 @@
+* {
+    align-items: center;
+}
+
+body {
+    background-color: #F9DCC4;
+}
+
+.details-wrapper {
+    display: inline-block;
+    margin-right: 10px;
+}

@@ -34,7 +34,8 @@ main {
     height: 40px;
     border: 0;
     border-radius: 40px;
-    padding: 0 10px 0 20px;
+    padding: 0 10px 0 25px;
+    font-size: 13px;
 }
 
 .regbtn {
@@ -45,6 +46,11 @@ main {
     border-radius: 40px;
     background-color: #F9DCC4;
     font-size: 16px;
+}
+
+.regbtn:hover {
+    background-color: #FEC89A;
+    cursor: pointer;
 }
 
 p {
@@ -72,3 +78,30 @@ h5 a:hover {
     background-color: #F8EDEB;
     color: black;
 }
+
+/*radio設定*/
+.hi {
+   margin: 35px 0;
+}
+
+#radio-btn input[type="radio"] {
+    display: none;
+}
+
+#radio-btn input:checked + .button {
+    background-color:#FFB5A7;
+    color: white;
+    cursor: grabbing;
+}
+
+#radio-btn .button {
+    background-color: #FCD5CE;
+    color: white;
+    font-size: 14px;
+    padding: 8px 18px;
+}
+
+#radio-btn .round {
+    border-radius: 25px;
+}
+/*radio設定*/

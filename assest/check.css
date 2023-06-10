@@ -96,13 +96,18 @@ td img {
 }
 
 .total {
-    
     font-weight: bold;
-    font-size: 22px;
+    font-size: 24px;
     height: 70px;
-    font-size: 20px; 
-    font-weight: bold; 
     text-align: right;
+    padding-right: 40px;
+}
+
+.total0 {
+    
+    font-size: 18px;
+    text-align: right;
+    height: 70px;
     padding-right: 40px;
 }
 

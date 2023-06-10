@@ -35,11 +35,13 @@ main {
     height: 40px;
     border: 0;
     border-radius: 40px;
-    padding: 0 10px 0 20px;
+    padding: 0 25px;
+    font-size: 13px;
 }
 
 p {
     text-align: left;
+    padding-left: 15px;
 }
 
 .btn input {

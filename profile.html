@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Inline&family=Lobster+Two&family=Pacifico&family=Rubik+Puddles&display=swap" rel="stylesheet">
-    <title>Magic Ring</title>
+    <link rel="icon" href="image/doughnut.png">
+    <title>會員資料</title>
     <link rel="stylesheet" href="assest/profile.css">
     <link rel="stylesheet" href="assest/col.css">
 </head>
@@ -16,21 +17,33 @@
         <div class="headerleft">
         <a href="index.html"><img src="image/donut.png" width="50" height="50"></a>
             <div class="search">
-                <img src="image/search.png" width="15" height="15"> 
+                <img src="image/search.png" width="24" height="24"> 
                 <input class="search_input" placeholder="Search"></input>
             </div>
         </div>
 
         <div class="headerright">
         <a href="allproduct.html">ALL PRODUCTS</a>
-        <a href="">HOT!!</a> 
-        <a href="">ABOUT US</a> 
+        <a href="hot.html">HOT!!</a> 
+        <a href="about.html">ABOUT US</a>  
         <a href="profile.html">MEMBER</a> 
-        <a href="">EVEVNTS</a> 
-        <a href="login.html"><img src="image/user.png" width="25" height="25"></a> <!--登入-->
+        <!--events / 廣告-->
+        <button id="event">EVENTS</button>
+        <dialog id="eve">
+        <p class="dragon">    
+        慶祝端午節&emsp;買5送2<br>
+        抹茶甜甜圈&emsp;特賣$30<br><br>
+        <a href="allproduct.html">
+        <img style="border-radius: 50%;" src="image/matcha.png" width="246.75" height="181.875">
+        </a>
+        <br><br>
+        <button id="close">X</button></p>
+        </dialog>
+        <!--events / 廣告-->
+        <a href="login.html"><img src="image/user.png" width="24" height="24"></a> <!--登入-->
 
                 <!--購物側邊欄-->
-                <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="25" height="25"></button> 
+                <button onclick="toggleSidebar()"><img src="image/shopping-cart.png" width="24" height="24"></button> 
                 <div id="sidebar">
                     <div class="text-center">
                     <div class=car>
@@ -82,6 +95,18 @@
                     var sidebar = document.getElementById("sidebar");
                     sidebar.classList.toggle("open");
                     }
+                    
+                    //廣告
+                    let btn=document.querySelector("#event");
+                    let eve=document.querySelector("#eve");
+                    let close=document.querySelector("#close");
+                    btn.addEventListener("click", function(){
+                    eve.showModal();
+                    })
+                    close.addEventListener("click", function(){
+                    eve.close();
+                    })
+                    //廣告
                 </script>
         
                 <!--購物側邊欄-->
@@ -104,26 +129,41 @@
                 <p>TOTAL：$90</p>
             </div>
         </div>
-        <div class="left">
+        <section class="left">
             <div class="title">會員資料</div>
-            <div class="list">
-                會員名稱<div class="data"></div><br>
-                帳號<div class="data"></div><br>
-                E-mail<div class="data"></div><br>
-                手機<div class="data"></div>
-            </div>
-        </div>
-        <div class="left">
-            <div class="title">修改密碼</div>
-            <div class="list">
-                輸入舊密碼<input type="text" name="old" class="input" size="20"><br>
-                新密碼<input type="text" name="new" class="input" size="20"><br>
-                確認新密碼<input type="text" name="checknew" class="input" size="20"><br>
-                <div class="btn">
-                    <input type="button"  class="changepw" value="確認修改">
+                <div class="list" style="margin-top: 15px;">
+                    會員名稱<div class="data">蔡永森</div>
                 </div>
-            </div>
-        </div>
+                <div class="list"> 
+                    帳&emsp;&emsp;號<div class="data">110442</div>
+                </div> 
+                <div class="list">
+                    E-mail<div class="data">54milk@cycu.edu.tw</div>
+                </div> 
+                <div class="list">
+                    手&emsp;&emsp;機<div class="data">0987654321</div>
+                </div>
+        </section>
+        <section class="left">
+            <div class="title">修改密碼</div>
+                <div class="list" style="margin-top: 15px;">
+                   輸入舊密碼
+                    <input type="text" name="old" class="input" size="20" placeholder="舊密碼">
+                </div>
+                <div class="list">
+                   新&emsp;密&emsp;碼
+                    <input type="text" name="new" class="input" size="20" placeholder="新密碼">
+                </div>
+                <div class="list">
+                    確認新密碼
+                    <input type="text" name="checknew" class="input" size="20" placeholder="再次輸入新密碼">
+                </div>
+                <div class="list" style="justify-content: center;">
+                    <div class="btn">
+                        <input type="button"  class="changepw" value="確認修改">
+                    </div>
+                </div>
+        </section>
     </main>
 </body>
 </html>
